@@ -1,5 +1,5 @@
 import {
-    mobile,
+    react,
     backend,
     creator,
     web,
@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    photoshop
   } from "../assets";
   
   export const navLinks = [
@@ -47,7 +48,7 @@ import {
     },
     {
       title: "React Developer",
-      icon: mobile,
+      icon: react,
     },
     {
       title: "Backend Developer",
@@ -59,7 +60,7 @@ import {
     },
     {
       title: "PhotoShop Expert",
-      icon: creator,
+      icon: photoshop,
     },
   ];
   

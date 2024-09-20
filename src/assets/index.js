@@ -1,7 +1,8 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
+import photoshop from "./photoshop.png";
 import creator from "./creator.png";
-import mobile from "./mobile.png";
+import react from "./react.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -36,7 +37,7 @@ export {
   logo,
   backend,
   creator,
-  mobile,
+  react,
   web,
   github,
   menu,
@@ -61,5 +62,6 @@ export {
   carrent,
   jobit,
   tripguide,
-  lmv
+  lmv,
+  photoshop
 };

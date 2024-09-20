@@ -18,16 +18,17 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={512}
       />
-      <pointLight intensity={1} />
+      <pointLight intensity={0.2} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={isMobile ? 0.3 : 0.45}
+        position={isMobile ? [0, -1, 0] : [0, -2.2, 0]} // Adjusted positions to center
+        rotation={[-0.01, 0, 0]} // Adjusted rotation to center the object
       />
     </mesh>
   );
 };
+
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
