@@ -11,13 +11,22 @@ import {
 import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
+  // const [decal] = useTexture([props.imgUrl]);
+
+  const [decal, error] = useTexture([props.imgUrl]);
+
+  const scale = window.innerWidth < 768 ? 1.5 : 2.75;
+  
+
+if (error) {
+  console.error("Failed to load texture", error);
+}
 
   return (
     <Float speed={1} rotationIntensity={0.75} floatIntensity={1.5}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh   scale={2.75}>
+      <mesh   scale={scale}>
         <icosahedronGeometry args={[1, 0]} />
         <meshStandardMaterial
           color='#fff8eb'
@@ -41,7 +50,7 @@ const BallCanvas = ({ icon }) => {
   return (
     <Canvas
       frameloop='demand'
-      dpr={[0, 1]}
+      dpr={[1,2]}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

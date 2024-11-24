@@ -14,7 +14,7 @@ const Computers = ({ isMobile }) => {
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
+        intensity={2}
         castShadow
         shadow-mapSize={512}
       />
@@ -59,7 +59,11 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      // camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{
+        position: isMobile ? [5, 3, 5] : [20, 3, 5],  // Adjusted for mobile
+        fov: 25,
+      }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
