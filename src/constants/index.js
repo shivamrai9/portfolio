@@ -20,8 +20,10 @@ import {
     tesla,
     shopify,
     carrent,
-    jobit,
-    tripguide,
+    ecommerceapp,
+    quizApp,
+    cardlisting,
+    dribble,
     threejs,
     photoshop
   } from "../assets";
@@ -89,10 +91,10 @@ import {
     //   name: "Tailwind CSS",
     //   icon: tailwind,
     // },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
+    // {
+    //   name: "JavaScript",
+    //   icon: javascript,
+    // },
     {
       name: "Node JS",
       icon: nodejs,
@@ -122,17 +124,32 @@ import {
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Insurance WebApplication",
+      company_name: "LMV IT Solutions",
       icon: lmv,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      iconBg: "#FFFFFF",
+      date: "August 2023 - October 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        " I craft solutions that streamline processes, enhance user experiences, and ensure seamless interactions for both clients and administrators.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developing dynamic and responsive UI components using React.js for modern web applications.",
+        "Integrating APIs to ensure seamless data flow and efficient communication between the frontend and backend systems.",
+        "Implementing state management solutions with Redux to handle complex application states.",
+        "Building reusable components and forms using Bootstrap and Material UI for consistent and visually appealing designs.",
+        "Collaborating closely with designers and backend developers to deliver feature-rich and user-friendly interfaces.",
+        "Ensuring code quality through best practices, debugging, and maintaining a scalable codebase."
       ],
-    },
+      project: {
+        name: "Insurance Purchasing Platform",
+        description: 
+          "A comprehensive platform that enables users to compare and purchase insurance policies from multiple companies such as HDFC, Go Digit, and Bajaj. The application streamlines the insurance selection process, allowing users to explore various plans, calculate premiums, and complete purchases seamlessly.",
+        key_features: [
+          "Implemented user-friendly interfaces for browsing and comparing insurance plans.",
+          "Integrated REST APIs for fetching insurance data and handling policy transactions in real-time.",
+          "Developed interactive forms and validation systems for capturing user inputs efficiently.",
+          "Used Material UI and Bootstrap for creating responsive and visually consistent components.",
+          "Facilitated secure payment gateways and policy confirmation workflows."
+        ],
+        technologies: ["React.js", "Redux", "Bootstrap", "Material UI", "REST APIs"]
+      }
+    }
     // {
     //   title: "React Native Developer",
     //   company_name: "Tesla",
@@ -201,70 +218,167 @@ import {
     },
   ];
   
+  // const projects = [
+  //   {
+  //     name: "Car Rent",
+  //     description:
+  //       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+  //     tags: [
+  //       {
+  //         name: "react",
+  //         color: "blue-text-gradient",
+  //       },
+  //       {
+  //         name: "mongodb",
+  //         color: "green-text-gradient",
+  //       },
+  //       {
+  //         name: "tailwind",
+  //         color: "pink-text-gradient",
+  //       },
+  //     ],
+  //     image: carrent,
+  //     source_code_link: "https://github.com/",
+  //   },
+  //   {
+  //     name: "Job IT",
+  //     description:
+  //       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+  //     tags: [
+  //       {
+  //         name: "react",
+  //         color: "blue-text-gradient",
+  //       },
+  //       {
+  //         name: "restapi",
+  //         color: "green-text-gradient",
+  //       },
+  //       {
+  //         name: "scss",
+  //         color: "pink-text-gradient",
+  //       },
+  //     ],
+  //     image: jobit,
+  //     source_code_link: "https://github.com/",
+  //   },
+  //   {
+  //     name: "Trip Guide",
+  //     description:
+  //       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+  //     tags: [
+  //       {
+  //         name: "nextjs",
+  //         color: "blue-text-gradient",
+  //       },
+  //       {
+  //         name: "supabase",
+  //         color: "green-text-gradient",
+  //       },
+  //       {
+  //         name: "css",
+  //         color: "pink-text-gradient",
+  //       },
+  //     ],
+  //     image: tripguide,
+  //     source_code_link: "https://github.com/",
+  //   },
+  // ];
+
   const projects = [
     {
-      name: "Car Rent",
+      name: "E-commerce Application",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A full-featured MERN stack e-commerce platform with an admin panel, secure payments, and cloud deployment.",
       tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
+        { name: "react", color: "blue-text-gradient" },
+        { name: "redux-toolkit", color: "green-text-gradient" },
+        { name: "tailwind-css", color: "pink-text-gradient" },
+        { name: "node js", color: "yellow-text-gradient" },
+        { name: "mongodb", color: "green-text-gradient" },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: ecommerceapp, 
+      live_url: "https://e-commerce-server-oivh.onrender.com",
+      source_code_link: "https://github.com/shivamrai9/Ecommerce_frontend",
+      features: [
+        "Product listing, details, cart, and checkout.",
+        "Admin panel for managing orders and products.",
+        "Sorting, filtering, and pagination with Mongoose.",
+        "Secure card payments with Stripe and cash payments.",
+        "Email notifications for orders and password resets.",
+      ],
+      tech_stack: [
+        "React 18",
+        "Redux Toolkit",
+        "Express",
+        "MongoDB",
+        "Mongoose",
+        "Tailwind CSS",
+        "Stripe",
+        "Nodemailer",
+      ],
     },
     {
-      name: "Job IT",
+      name: "Quiz App",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "An interactive quiz application with dynamic question sets and MongoDB-powered backend.",
       tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
+        { name: "react", color: "blue-text-gradient" },
+        { name: "css", color: "green-text-gradient" },
+        { name: "mongodb", color: "pink-text-gradient" },
+        { name: "nodejs", color: "yellow-text-gradient" },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: quizApp, 
+      live_url: "https://quiz-app-client-tau.vercel.app/",
+      source_code_link: "https://github.com/shivamrai9/Quiz-app-client",
+      features: [
+        "Dynamic quizzes with multiple categories.",
+        "Secure and scalable backend using MongoDB.",
+        "Real-time data processing and user management.",
+      ],
+      tech_stack: ["React", "CSS", "MongoDB", "Node.js"],
     },
     {
-      name: "Trip Guide",
+      name: "Dynamic Card App",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A simple UI project for practicing Redux Toolkit, featuring card list display with pagination in React.",
       tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
+        { name: "react", color: "blue-text-gradient" },
+        { name: "redux-toolkit", color: "green-text-gradient" },
+        { name: "tailwind css", color: "pink-text-gradient" },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: cardlisting, // Replace with the appropriate image variable
+      live_url: "https://dynamic-card-app.vercel.app/",
+      source_code_link: "https://github.com/shivamrai9/dynamic-card-app",
+      features: [
+        "Dynamic card rendering in a list format.",
+        "Pagination for managing large data sets.",
+        "State management handled with Redux Toolkit.",
+      ],
+      tech_stack: ["React", "Redux Toolkit", "CSS"],
+    },
+    {
+      name: "Dribble Clone",
+      description:
+        "A Dribble-inspired clone with profile creation, image uploads, and JWT-based authentication.",
+      tags: [
+        { name: "react", color: "blue-text-gradient" },
+        { name: "nodejs", color: "yellow-text-gradient" },
+        { name: "mongodb", color: "green-text-gradient" },
+        { name: "cloudinary", color: "pink-text-gradient" },
+      ],
+      image: dribble, // Replace with the appropriate image variable
+      live_url: "https://dribbleapp.vercel.app/",
+      source_code_link: "https://github.com/shivamrai9/dribbleapp",
+      features: [
+        "User authentication using JWT.",
+        "Profile creation and management upon login.",
+        "Image uploads powered by Cloudinary.",
+        "Forms handled with React Hook Form.",
+        "REST API built with Node.js and Express.",
+      ],
+      tech_stack: ["React", "Node.js", "MongoDB", "Cloudinary", "React Hook Form", "Express"],
     },
   ];
+  
   
   export { services, technologies, experiences, testimonials, projects };

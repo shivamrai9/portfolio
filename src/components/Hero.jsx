@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
@@ -19,13 +19,13 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Shivam</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop Engaging UI Experiences with React, user <br className='sm:block hidden' />
-            interfaces and web applications
+            I create modern web apps with JavaScript and React,<br className='sm:block hidden' />
+            blending innovation, scalability, and great user experiences.
           </p>
         </div>
       </div>
 
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>

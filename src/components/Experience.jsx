@@ -24,7 +24,7 @@ const ExperienceCard = ({ experience }) => {
         <img
           src={experience.icon}
           alt={experience.company_name}
-          className='w-[60%] h-[60%] object-contain'
+          className='w-[70%] h-[70%] object-contain'
         />
       </div>
     }
@@ -48,6 +48,27 @@ const ExperienceCard = ({ experience }) => {
           </li>
         ))}
       </ul>
+      {experience.project && (
+        <div className="mt-5">
+          <h4 className="text-white text-[18px] font-semibold">Project: {experience.project.name}</h4>
+          <p className="text-white-100 text-[14px]">{experience.project.description}</p>
+          <ul className="mt-3 list-disc ml-5 space-y-1">
+            {experience.project.key_features.map((feature, index) => (
+              <li key={`project-feature-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider">
+                {feature}
+              </li>
+            ))}
+          </ul>
+          <p className="text-white-100 text-[14px] mt-3 font-semibold">Technologies Used:</p>
+          <ul className="list-disc ml-5 space-y-1">
+            {experience.project.technologies.map((tech, index) => (
+              <li key={`project-tech-${index}`} className="text-white-100 text-[14px] pl-1 tracking-wider">
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </VerticalTimelineElement>
   )
 }

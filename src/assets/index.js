@@ -29,7 +29,10 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import cardlisting from "./cardlisting.png";
+import quizApp from "./quizApp.png";
+import dribble from "./dribble.png";
+import ecommerceapp from "./ecommerceapp.png";
 
 import lmv from './company/lmv.png'
 
@@ -61,7 +64,10 @@ export {
   tesla,
   carrent,
   jobit,
-  tripguide,
+  ecommerceapp,
+  quizApp,
+  cardlisting,
+  dribble,
   lmv,
   photoshop
 };

@@ -21,7 +21,7 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={0.2} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.3 : 0.45}
+        scale={isMobile ? 1 : 3}
         position={isMobile ? [0, -1, 0] : [0, -2.2, 0]} // Adjusted positions to center
         rotation={[-0.01, 0, 0]} // Adjusted rotation to center the object
       />
