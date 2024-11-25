@@ -14,16 +14,18 @@ const Computers = ({ isMobile }) => {
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={2}
+        intensity={1}
         castShadow
         shadow-mapSize={512}
       />
-      <pointLight intensity={0.2} />
+      {/* <pointLight intensity={0.2} /> */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.3 : 0.45}
-        position={isMobile ? [0, -1, 0] : [0, -2.2, 0]} // Adjusted positions to center
-        rotation={[-0.01, 0, 0]} // Adjusted rotation to center the object
+        // scale={isMobile ? 0.3 : 0.45}
+        // scale={isMobile ? 0.7 : 0.75}
+        // position={isMobile ? [0, -1, 0] : [0, -2.2, 0]} // Adjusted positions to center
+        position={isMobile ? [0, -3, -2.2] : [0, -3.2, -1.5]} // Adjusted positions to center
+        rotation={[-0.01, -0.2, -0.1]} // Adjusted rotation to center the object
       />
     </mesh>
   );
@@ -59,11 +61,11 @@ const ComputersCanvas = () => {
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      // camera={{ position: [20, 3, 5], fov: 25 }}
-      camera={{
-        position: isMobile ? [5, 3, 5] : [20, 3, 5],  // Adjusted for mobile
-        fov: 25,
-      }}
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      // camera={{
+      //   position: isMobile ? [5, 3, 5] : [20, 3, 5],  // Adjusted for mobile
+      //   fov: 25,
+      // }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -81,3 +83,7 @@ const ComputersCanvas = () => {
 };
 
 export default ComputersCanvas;
+
+
+
+
