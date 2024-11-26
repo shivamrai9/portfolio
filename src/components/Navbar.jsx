@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
 import { logo, menu, close } from '../assets'
+import resume from "../assets/resume/resume.pdf"
 
 const Navbar = () => {
   const [active, setActive] = useState('')
@@ -39,6 +40,16 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+           {/* Add Download Resume Option */}
+           <li>
+            <a
+              href={resume}
+              download="Shivam_Rai_Resume.pdf"
+              className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
+            >
+              Download Resume
+            </a>
+          </li>
         </ul>
 
 
@@ -65,6 +76,17 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
+              {/* Add Download Resume Option for Mobile Menu */}
+              <li>
+                <a
+                  href={resume}
+                  download="Shivam_Rai_Resume.pdf"
+                  className="text-secondary hover:text-white text-[16px] font-medium cursor-pointer"
+                  onClick={() => setToggle(!toggle)}
+                >
+                  Download Resume
+                </a>
+              </li>
             </ul>
           </div>
         </div>

@@ -24,8 +24,10 @@ import {
     quizApp,
     cardlisting,
     dribble,
+    blog,
     threejs,
-    photoshop
+    photoshop,
+    tailwindcss
   } from "../assets";
   
   export const navLinks = [
@@ -45,7 +47,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "MERN STACK",
       icon: web,
     },
     {
@@ -59,6 +61,10 @@ import {
     {
       title: "FrontEnd Developer",
       icon: creator,
+    },
+    {
+      title: "Tailwind Css",
+      icon: tailwindcss,
     },
     {
       title: "PhotoShop Expert",
@@ -317,6 +323,38 @@ import {
         "Nodemailer",
       ],
     },
+    {
+      name: "Developer Blog Application",
+      description:
+        "A developer-centric MERN stack blog application featuring Google authentication,admin panel,CRUD operations, profile management,comments,like etc.",
+      tags: [
+        { name: "react", color: "blue-text-gradient" },
+        { name: "node js", color: "yellow-text-gradient" },
+        { name: "mongodb", color: "green-text-gradient" },
+        { name: "firebase", color: "orange-text-gradient" },
+        { name: "google-auth", color: "red-text-gradient" },
+      ],
+      image: blog, 
+      live_url: "https://developerblog-site.onrender.com",
+      source_code_link: "https://github.com/shivamrai9/developerblog-site",
+      features: [
+        "Google authentication using Firebase for secure login.",
+        "Admin panel with full CRUD functionality for blogs.",
+        "User profile creation and updates.",
+        "Commenting system for user engagement on posts.",
+        "Responsive UI tailored for developers.",
+      ],
+      tech_stack: [
+        "React 18",
+        "Express",
+        "MongoDB",
+        "Firebase",
+        "Node.js",
+        "Mongoose",
+        "Google Authentication",
+        "Tailwind CSS",
+      ],
+    },  
     {
       name: "Quiz App",
       description:

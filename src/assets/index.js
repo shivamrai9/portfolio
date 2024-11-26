@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import photoshop from "./photoshop.png";
+import tailwindcss from "./tailwindcss.png"
 import creator from "./creator.png";
 import react from "./react.png";
 import web from "./web.png";
@@ -33,6 +34,7 @@ import cardlisting from "./cardlisting.png";
 import quizApp from "./quizApp.png";
 import dribble from "./dribble.png";
 import ecommerceapp from "./ecommerceapp.png";
+import blog from "./blog.png";
 
 import lmv from './company/lmv.png'
 
@@ -56,6 +58,7 @@ export {
   reactjs,
   redux,
   tailwind,
+  tailwindcss,
   typescript,
   threejs,
   meta,
@@ -66,6 +69,7 @@ export {
   jobit,
   ecommerceapp,
   quizApp,
+  blog,
   cardlisting,
   dribble,
   lmv,
