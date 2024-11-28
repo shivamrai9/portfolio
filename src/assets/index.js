@@ -35,6 +35,7 @@ import quizApp from "./quizApp.png";
 import dribble from "./dribble.png";
 import ecommerceapp from "./ecommerceapp.png";
 import blog from "./blog.png";
+import todoapp from "./todoapp.png"
 
 import lmv from './company/lmv.png'
 
@@ -70,6 +71,7 @@ export {
   ecommerceapp,
   quizApp,
   blog,
+  todoapp,
   cardlisting,
   dribble,
   lmv,
