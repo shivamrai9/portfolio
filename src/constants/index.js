@@ -28,7 +28,8 @@ import {
   threejs,
   photoshop,
   todoapp,
-  tailwindcss
+  tailwindcss,
+  gsapwebsite
 } from "../assets";
 
 export const navLinks = [
@@ -300,7 +301,7 @@ const projects = [
       { name: "gsap", color: "green-text-gradient" },
       { name: "tailwind-css", color: "pink-text-gradient" }
     ],
-    image: "https://your-image-link.com", // Replace with actual image URL
+    image: gsapwebsite, // Replace with actual image URL
     live_url: "https://gsap-website-sooty.vercel.app/",
     source_code_link: "https://github.com/shivamrai9/portfolio",
     features: [
