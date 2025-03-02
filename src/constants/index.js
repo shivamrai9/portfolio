@@ -293,6 +293,33 @@ const testimonials = [
 
 const projects = [
   {
+    name: "GSAP-WEBSITE",
+    description: "An animated website created using GSAP and Next.js for smooth and interactive user experiences.",
+    tags: [
+      { name: "next js", color: "blue-text-gradient" },
+      { name: "gsap", color: "green-text-gradient" },
+      { name: "tailwind-css", color: "pink-text-gradient" }
+    ],
+    image: gsapWebsiteImage, // Replace with the actual image variable
+    live_url: "https://your-gsap-website-live-link.com", // Replace with actual live URL
+    source_code_link: "https://github.com/shivamrai9/GSAP-Website",
+    features: [
+      "Smooth animations using GSAP.",
+      "Optimized performance with Next.js.",
+      "Scroll-triggered animations.",
+      "Interactive elements and transitions.",
+      "Responsive design with Tailwind CSS."
+    ],
+    tech_stack: [
+      "Next.js",
+      "GSAP",
+      "React",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
+}
+,
+  {
     name: "E-commerce Application",
     description:
       "A full-featured MERN stack e-commerce platform with an admin panel, secure payments, and cloud deployment.",
